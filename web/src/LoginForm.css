@@ -1,0 +1,75 @@
+/* Fondo degradado para toda la pantalla */
+.login-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.007);
+}
+
+/* Tarjeta del login */
+.login-card {
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  padding: 2.5rem 2rem;
+  transition: box-shadow 0.3s;
+}
+.login-card:hover {
+  box-shadow: 0 16px 40px 0 rgba(31, 38, 135, 0.25);
+}
+
+.input-group-text {
+  background: #f3f6fa;
+  border: none;
+  color: #6a11cb;
+  font-size: 1.1rem;
+}
+.form-control:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 0 0.2rem rgba(37,117,252,.15);
+}
+
+.login-btn {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.alert {
+  border-radius: 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Animaciones (puedes usar animate.css o personalizadas) */
+.animate__animated {
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+}
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+.animate__fadeInDown {
+  animation-name: fadeInDown;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Botón de mostrar/ocultar contraseña */
+.btn-outline-secondary {
+  border: none;
+  background: transparent;
+  color: #6a11cb;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.btn-outline-secondary:hover {
+  color: #2575fc;
+} 
